@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Implements hook_denormalizer_info().
+ *
+ * Provide a list of plain tables and entities that should be denormalized.
+ */
+function denormalized_tables_denormalizer_info() {
+
+  return [
+    // Plain Drupal table,
+//    'dn_table' => [
+//      'base table' => 'dn_table',
+//    ],
+    // Typical entity 'tajikistan_data_entry', 'indicators'
+    'denormalized_table' => [
+      'entity_type' => 'node',
+      'bundles' => ['tajikistan_data_entry'],
+      'changed_key' => 'changed',
+    ],
+  ];
+}

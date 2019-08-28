@@ -1,0 +1,7 @@
+name: "Denormalized tables"
+type: module
+description: "Custom denormalized from database."
+dependencies:
+  - views
+package: "Views"
+core: 8.x
